@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<head>
+	<title>秘密花园</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <meta name="author" content="templatemo">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/templatemo_misc.css" rel="stylesheet">
+	<link href="css/templatemo_style.css" rel="stylesheet">
+
+	<script src="js/jquery-1.11.1.min.js"></script> 
+	<script src="js/jquery.lightbox.js"></script>
+	<script src="js/templatemo_custom.js"></script>
+</head>
+<body>
+	<div class="container">
+ 		<div id="menu"></div>
+		<div id="services-content">
+			<header>
+				<h1>紫月的秘密花园</h1>
+			</header>
+			<div class="content services">
+				<div class="hexagon_container">
+					<div class="hexagon hexagon2 services-item">
+						<div class="hexagon-in1">
+							<div class="hexagon-in2" data-service-description="庭前花木满，院外小径芳。四时常相往，晴日共剪窗。">
+								<i class="fa fa-pencil"></i>
+							</div>
+						</div>
+					</div>
+					<h2>晴日共剪窗</h2> 
+				</div>
+				<div class="hexagon_container">
+					<div class="hexagon hexagon2 services-item">
+						<div class="hexagon-in1">
+							<div class="hexagon-in2" data-service-description="睡吧，小鸟们。我把活着喜欢过了。">
+								<i class="fa fa-cog"></i>
+							</div>
+						</div>
+					</div>
+					<h2>诗遇上歌</h2>
+				</div>
+				<div class="hexagon_container">
+					<div class="hexagon hexagon2 services-item">
+						<div class="hexagon-in1">
+							<div class="hexagon-in2" data-service-description="我想和你虚度时光，比如低头看鱼，比如把茶杯留在桌子上离开...">
+								<i class="fa fa-support"></i>
+							</div>
+						</div>
+					</div>
+					<h2>我想和你虚度时光</h2>
+				</div>
+				<div class="hexagon_container">
+					<div class="hexagon hexagon2 services-item">
+						<div class="hexagon-in1">
+							<div class="hexagon-in2" data-service-description="我和小鸟和铃铛，我们不一样，我们都很棒。">
+								<i class="fa fa-bell"></i>
+							</div>
+						</div>
+					</div>
+					<h2>早生的铃虫</h2>
+				</div>
+				<div class="hexagon_container">
+					<div class="hexagon hexagon2 services-item">
+						<div class="hexagon-in1">
+							<div class="hexagon-in2" data-service-description="我心中有一道，自由的光芒，是风和花和星空，是鱼和沙和海洋...">
+								<i class="fa fa-bullhorn"></i>
+							</div>
+						</div>
+					</div>
+					<h2>光芒</h2>
+				</div>
+				<div class="content-description">
+					<p></p>	
+				</div>			
+			</div>
+		</div>				
+	</div>
+    <div class="templatemo_footer">
+    	Copyright © 2017 紫月
+    </div>
+	<script type="text/javascript">
+		$("#services-content .hexagon-in2").hover(function() {
+			$('.content-description p').text($(this).data("serviceDescription"));
+			$("#services-content .hexagon-in2").removeClass('active');
+			$(this).addClass('active');
+			
+		});
+ 		$("#menu").load("menu.html");
+	</script>
+</body>
+</html>

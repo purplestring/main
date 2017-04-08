@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <head>
-	<title>Polystar by templatemo - Free HTML5 Template</title>
+	<title>紫月的世界</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
     <meta name="author" content="templatemo">
@@ -17,53 +18,7 @@
 </head>
 <body>
 	<div class="container">
-		<div class="menu">
-			<div class="hexagon_container" id="logo">
-				<div class="hexagon hexagon2">
-					<div class="hexagon-in1">
-						<div class="hexagon-in2 active">
-							<h2>鸟儿</h2>             	 	
-						</div>
-					</div>
-				</div>					
-			</div>
-			<div class="hexagon_container" id="team">
-				<div class="hexagon hexagon2">
-					<div class="hexagon-in1">
-						<a href="team.html">
-							<div class="hexagon-in2">
-								<i class="fa fa-user"></i>
-								<h2>简介</h2>             	 	
-							</div>
-						</a>
-					</div>
-				</div>				
-			</div>
-			<div class="hexagon_container" id="services">
-				<div class="hexagon hexagon2">
-					<div class="hexagon-in1">
-						<a href="services.html">
-							<div class="hexagon-in2">
-								<i class="fa fa-cogs"></i>
-								<h2>备注</h2>             	 	
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>		
-			<div class="hexagon_container" id="contact">
-				<div class="hexagon hexagon2">
-					<div class="hexagon-in1">
-						<a href="contact.html">
-							<div class="hexagon-in2">
-								<i class="fa fa-envelope"></i>
-								<h2>评论</h2>             	 	
-							</div>
-						</a>
-					</div>
-				</div>						
-			</div>
-		</div>
+		<div id="menu"></div>		
         <div class="copyrights">Collect from</div>
 		<div id="gallery-content">
 			<header>
@@ -321,6 +276,7 @@
 		$('#page_link_1').click({page_no:1},pagination_click);
 		$('#page_link_2').click({page_no:2},pagination_click);
 		$('#page_link_3').click({page_no:3},pagination_click);
+ 		$("#menu").load("menu.html");
 	</script>
 </body>
 </html>

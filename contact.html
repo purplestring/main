@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <head>
-	<title>Contact - Polystar by templatemo</title>
+	<title>写给紫月</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
     <meta name="author" content="templatemo">
@@ -17,56 +17,10 @@
 </head>
 <body>
 	<div class="container">
-		<div class="menu">
-			<div class="hexagon_container" id="logo">
-				<div class="hexagon hexagon2">
-					<div class="hexagon-in1">
-						<a href="index.html">
-							<div class="hexagon-in2">
-								<h2>POLYSTAR</h2>             	 	
-							</div>
-						</a>
-					</div>
-				</div>					
-			</div>
-			<div class="hexagon_container" id="team">
-				<div class="hexagon hexagon2">
-					<div class="hexagon-in1">
-						<a href="team.html">
-							<div class="hexagon-in2">
-								<i class="fa fa-user"></i>
-								<h2>OUR TEAM</h2>             	 	
-							</div>
-						</a>
-					</div>
-				</div>				
-			</div>
-			<div class="hexagon_container" id="services">
-				<div class="hexagon hexagon2">
-					<div class="hexagon-in1">
-						<a href="services.html">
-							<div class="hexagon-in2">
-								<i class="fa fa-cogs"></i>
-								<h2>SERVICES</h2>             	 	
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>		
-			<div class="hexagon_container" id="contact">
-				<div class="hexagon hexagon2">
-					<div class="hexagon-in1">
-						<div class="hexagon-in2 active">
-							<i class="fa fa-envelope"></i>
-							<h2>CONTACT</h2>             	 	
-						</div>
-					</div>
-				</div>						
-			</div>
-		</div>	
+		<div id="menu"></div>
 		<div id="contact-content">
 			<header>
-				<h1>Send us a message</h1>
+				<h1>写给紫月的悄悄话...</h1>
 			</header>
 			<div class="content contact">
 				<div class="templatemo_contactmap">
@@ -75,23 +29,23 @@
 				</div>
 				<form action="#" method="post" role="form">
 					<div class="templatemo_form">
-						<input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name" maxlength="40">
+						<input name="fullname" type="text" class="form-control" id="fullname" placeholder="名字" maxlength="40">
 					</div>
 					<div class="templatemo_form">
-						<input name="email" type="text" class="form-control" id="email" placeholder="Your Email" maxlength="40">
+						<input name="email" type="text" class="form-control" id="email" placeholder="邮箱" maxlength="40">
 					</div>
 					<div class="templatemo_form">
-						<textarea name="message" rows="10" class="form-control" id="message" placeholder="Message"></textarea>
+						<textarea name="message" rows="10" class="form-control" id="message" placeholder="想对紫月说..."></textarea>
 					</div>
 					<div class="templatemo_form">
-                    	<button type="submit" class="btn btn-primary">Send</button>
+                    	<button type="submit" class="btn btn-primary" onclick="alert('紫月还木有做完...');">发出</button>
                     </div>
 				</form>				
-				<address class="content-description">
+				<!--address class="content-description">
 					<i class="fa fa-map-marker"></i>123 Thamine Street, Digital Estate, Yangon<br>
 					<i class="fa fa-envelope"></i><a href="mailto:contact@yourcompany.com">contact@yourcompany.com</a><br>
                     <i class="fa fa-phone"></i>010-020-0340<br>
-				</address>			
+				</address-->			
 			</div>
 		</div>				
 	</div>
@@ -100,6 +54,7 @@
     </div>
 	<script type="text/javascript">
 		loadScript();
+		$("#menu").load("menu.html");
 	</script>
 </body>
 </html>

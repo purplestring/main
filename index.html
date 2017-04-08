@@ -23,6 +23,7 @@
 		<div id="gallery-content">
 			<header>
 				<h1>紫月的世界</h1>
+				欢迎第<label id="lb_count">0</label>位小伙伴
 			</header>
 			<div class="content gallery" id="page1">
 				<div class="hexagon_container">
@@ -270,13 +271,57 @@
 			</div>	
 		</div>			
 	</div>
-<div class="templatemo_footer">
-    	Copyright © 2017 紫月</div>
-	<script type="text/javascript">
+<div class="templatemo_footer">Copyright © 2017 紫月</div>
+	
+
+<script type="text/javascript" src="http://www.coding123.net/getip.ashx?js=1"></script>
+
+<script type="text/javascript">
 		$('#page_link_1').click({page_no:1},pagination_click);
 		$('#page_link_2').click({page_no:2},pagination_click);
 		$('#page_link_3').click({page_no:3},pagination_click);
  		$("#menu").load("menu.html");
+
+   $(function(){
+       getTotalPV();
+    });
+    function getTotalPV()
+    {
+        $.ajax({ 
+            url:"http://cloud.bmob.cn/f33d19e1a531931c/getTotalPV", 
+            dataType:'jsonp', 
+            data:'', 
+            jsonp:'callback', 
+            success:function(result) { 
+                   //result.results[0].totalPV
+               $('#lb_count').html(result.results[0].totalPV);
+               //更新次数
+               setTotalPV();
+            }     
+        });    
+    }  
+    function setTotalPV()
+    {
+      $.ajax({ 
+            url:"http://cloud.bmob.cn/f33d19e1a531931c/setTotalPV", 
+            dataType:'jsonp', 
+            data:'', 
+            jsonp:'callback', 
+            success:function(result) {               
+            }     
+        });
+
+
+      $.ajax({ 
+            url:"http://cloud.bmob.cn/f33d19e1a531931c/writeIP?IP="+ip.substr(1,16),
+            dataType:'jsonp', 
+            data:'', 
+            jsonp:'callback', 
+            success:function(result) {               
+            }     
+        });
+    }
+
 	</script>
 </body>
 </html>

@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
 	if (canvas && canvas.getContext) {
 		var ctx = canvas.getContext("2d");
 		if (ctx) {
-			ctx.fillStyle = "#383e42";
+			ctx.fillStyle = "#052c07";
 			ctx.beginPath();
 			ctx.moveTo(0,470);
 			ctx.lineTo(223,82);
@@ -59,7 +59,7 @@ function loadScript() {
 function initialize() {
     var mapOptions = {
       zoom: 14,
-      center: new google.maps.LatLng(16.8496189,96.1288854)
+      center: new google.maps.LatLng(37.22,118.02)
     };
     var map = new google.maps.Map(document.getElementById('templatemo_map'),  mapOptions);
 }
